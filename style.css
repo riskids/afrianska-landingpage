@@ -13,8 +13,10 @@
 }
 
 #section-1 img {
-    float: right;
-    padding: 3% 10% 0px 0px;
+    padding: 5% 10% 0px 0px;
+    position: absolute;
+    right: 0%;
+    top: 0;
 }
 
 nav{
@@ -44,7 +46,6 @@ nav ul li a{
 .container{
     padding: 0px 15% 0% 15%;
     width: 100%;
-    position: absolute;
 }
 
 .container h1 {
@@ -214,11 +215,12 @@ nav ul li a{
     padding: 96px 0px 0px 0px;
     position: relative;
     background: #5A98D0;
-    height: 30em;
+    height: 1549px;
     border-radius: 200px 0px 0px 0px;
 }
 
 .client-list{
+    margin-top: 111px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(333px, 1fr));
     grid-template-rows: repeat(3,10em);
@@ -228,8 +230,20 @@ nav ul li a{
     position: relative;
 }
 
+.client:hover{
+    background: rgba(31, 63, 104, 0.2);
+}
+
 #border-start{
     border-style: none solid solid none;
+}
+
+.client h3{
+    text-decoration: none;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
 }
 
 
@@ -237,6 +251,16 @@ nav ul li a{
 .client img{
     top: 50%;
     transform: translateY(-50%);
+    left: 20%;
     max-width: 200px;
     position: absolute;
+}
+
+.sub-footer{
+    position: absolute;
+    background: #316099;
+    height: 869px;
+    bottom: 0;
+    left: 0;
+    border-radius: 0px 200px 0px 0px;
 }
